@@ -19,5 +19,5 @@ FROM nginx:1.13.9-alpine
 
 COPY --from=node /tmp/bpmn-js/public /usr/share/nginx/html
 
-EXPOSE 8080
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
